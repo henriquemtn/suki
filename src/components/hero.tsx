@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Badge } from "./ui/badge";
 
 export default function Hero() {
@@ -18,9 +19,9 @@ export default function Hero() {
 
           <div className="mb-6">
             <div className="flex flex-col justify-center items-center lg:items-start gap-5">
-              <button className="bg-orange-500 py-2 px-3.5 rounded-lg font-medium text-white">
+              <Link href="/sign-up" className="bg-orange-500 py-2 px-3.5 rounded-lg font-medium text-white">
                 Comece agora
-              </button>
+              </Link>
               <p className="text-xs leading-[1.125rem] text-gray-400">
                 O app que entende o amor entre você e seu pet.
               </p>

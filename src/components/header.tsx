@@ -1,4 +1,3 @@
-
 import Link from 'next/link'
 import { Button } from './ui/button'
 
@@ -14,12 +13,16 @@ export default function Header() {
 
                     <div className="inline-flex items-center">
                         <div className='border-l border-dashed border-gray-200 pl-8 ml-6'>
-                            <Button>Comece agora</Button>
+                            <Link href="/sign-up" className="bg-orange-500 py-2 px-3.5 rounded-lg font-medium text-white">
+                                Comece agora
+                            </Link>
                         </div>
 
                         {/* CTA button */}
                         <div className="ml-4">
-                            <Button variant='ghost'>Fazer login</Button>
+                            <Link href="/sign-in" className="py-2 px-3.5 rounded-lg font-medium text-black">
+                                Entrar
+                            </Link>
                         </div>
 
                         {/* Mobile Menu button */}
